@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Finance Watcher</string>
+
+    <string name="current_finances_button">Current Finances</string>
+    <string name="set_finances_button">Set Finances</string>
+    <string name="settings_button">Settings</string>
+
+    <string name="graph">Graph goes here.</string>
+    <string name="category_list">Category list goes here.</string>
+    <string name="daily_finances_button">Daily</string>
+    <string name="monthly_finances_button">Monthly</string>
+    <string name="yearly_finances_button">Yearly</string>
+    <string name="purchase_list_text">List of purchases go here.</string>
+    <string name="allowances_button">Allowances</string>
+    <string name="CategoryList"></string>
+
+    <string name="estimated_daily_allowance">Estimated Daily Allowance</string>
+    <string name="estimated_monthly_allowance">Estimated Monthly Allowance</string>
+    <string name="estimated_yearly_allowance">Estimated Yearly Allowance</string>
+    <string name="daily_allowance">Daily Allowance</string>
+    <string name="monthly_allowance">Monthly Allowance</string>
+    <string name="yearly_allowance">Yearly Allowance</string>
+    <string name="back_button">Back</string>
+    <string name="set_new_allowances">Set New Allowances</string>
+
+</resources>
