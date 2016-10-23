@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- labels, text areas, and buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <!-- layout for both labels and text areas -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- bills layout -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bills: "/>
+                        <Space
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/bills"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                    <!-- Payments layout -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Payments: "/>
+                        <Space
+                            android:layout_width="21dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/payments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                    <!-- Subscriptions -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subscriptions: "/>
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/subs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                    <!-- Yearly Pay -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yearly Pay: "/>
+                        <Space
+                            android:layout_width="21dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/yearly_pay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout> <!-- end of label and text area layout -->
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="270dp" />
+        <!-- layout for buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/cat_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category Explanation"/>
+            <Button
+                android:id="@+id/estimate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estimate Finances"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout> <!-- end of entire layout -->

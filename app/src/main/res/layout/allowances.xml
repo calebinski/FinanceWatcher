@@ -71,7 +71,8 @@
                     <EditText
                         android:id="@+id/daily_allowance"
                         android:layout_width="100dp"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -88,7 +89,8 @@
                     <EditText
                         android:id="@+id/monthly_allowance"
                         android:layout_width="100dp"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -105,7 +107,8 @@
                     <EditText
                         android:id="@+id/yearly_allowance"
                         android:layout_width="100dp"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"/>
                 </LinearLayout>
 
             </LinearLayout>

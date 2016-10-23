@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         //find buttons
         currentFinances = (Button)findViewById(R.id.current_finances_button);
         setFinances = (Button)findViewById(R.id.set_finances_button);
-        settings = (Button)findViewById(R.id.settings_button);
+        //settings = (Button)findViewById(R.id.settings_button);
 
         //set listener to look for button click
         currentFinances.setOnClickListener(new View.OnClickListener(){
@@ -33,9 +33,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //set listener to look for button click
-
-
-        //set listener to look for button click
+        setFinances.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                //open new finances activity
+                Intent intent = new Intent(MainActivity.this, NewFinances.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
