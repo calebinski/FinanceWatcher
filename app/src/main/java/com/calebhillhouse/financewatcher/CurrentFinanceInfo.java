@@ -21,9 +21,9 @@ public class CurrentFinanceInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.current_finance_info);
 
-        daily = (Button)findViewById(R.id.daily_finances_button);
-        monthly = (Button)findViewById(R.id.monthly_finances_button);
-        yearly = (Button)findViewById(R.id.yearly_finances_button);
+        //daily = (Button)findViewById(R.id.daily_finances_button);
+        //monthly = (Button)findViewById(R.id.monthly_finances_button);
+        //yearly = (Button)findViewById(R.id.yearly_finances_button);
         allowances = (Button)findViewById(R.id.allowances_button);
 
         allowances.setOnClickListener(new View.OnClickListener() {
