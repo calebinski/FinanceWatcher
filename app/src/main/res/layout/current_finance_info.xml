@@ -10,28 +10,6 @@
         android:orientation="vertical"
         android:layout_gravity="center">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/graph"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Graph goes here."
-                android:padding="24dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="List goes here."
-                android:id="@+id/category_list"
-                android:padding="24dp"/>
-
-        </LinearLayout>
-
-
         <Button
             android:id="@+id/new_purchase"
             android:layout_width="wrap_content"
@@ -115,19 +93,8 @@
                             android:text="@string/daily_allowance_left"/>
                     </LinearLayout>
                 </LinearLayout>
-
-
             </LinearLayout>
-
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/purchase_list_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="List of purchases go here."
-            android:padding="24dp"
-            android:layout_gravity="center"/>
 
         <Button
             android:id="@+id/allowances_button"
@@ -136,6 +103,16 @@
             android:layout_gravity="center"
             android:text="Allowances"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List of purchases."
+            android:padding="24dp"
+            android:layout_gravity="center"/>
 
+        <ListView
+            android:id="@+id/purchase_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ListView>
     </LinearLayout>
 </LinearLayout>

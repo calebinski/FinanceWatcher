@@ -12,15 +12,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-
 public class NewFinances extends AppCompatActivity {
 
     EditText bills;
@@ -29,8 +20,7 @@ public class NewFinances extends AppCompatActivity {
     EditText yearly_pay;
 
     Button estimateFinances;
-
-    boolean goToNextAct = true;
+    Button catExplain;
 
     int billsValue;
     int paymentsValue;
@@ -46,17 +36,26 @@ public class NewFinances extends AppCompatActivity {
         setContentView(R.layout.activity_new_finances);
 
         estimateFinances = (Button)findViewById(R.id.estimate);
+        catExplain = (Button)findViewById(R.id.cat_explain);
 
         bills = (EditText)findViewById(R.id.bills);
         payments = (EditText)findViewById(R.id.payments);
         subs = (EditText)findViewById(R.id.subs);
         yearly_pay = (EditText)findViewById(R.id.yearly_pay);
 
+        catExplain.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(NewFinances.this);
+                alertDialog.setTitle("Category Explanation");
+                alertDialog.setMessage("Bills: Any and all bills you must pay at the end of the year.\nPayments: The yearly" +
+                        " value of the payments you make towards your house, car, etc.\nSubscriptions: Money you pay for subscriptions" +
+                        " to various services such as Netflix, magazines, games, etc.\nYearly Pay: The amount of money you make yearly.");
+                alertDialog.show();
+            }
+        });
 
         estimateFinances.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-
-                goToNextAct = true;
 
                 a = bills.getText().toString().trim();
                 b = payments.getText().toString().trim();

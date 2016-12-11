@@ -7,14 +7,8 @@
     <string name="settings_button">Settings</string>
 
     <!-- current_finance_info -->
-    <string name="graph">Graph goes here.</string>
-    <string name="category_list">Category list goes here.</string>
-    <string name="daily_finances_button">Daily</string>
-    <string name="monthly_finances_button">Monthly</string>
-    <string name="yearly_finances_button">Yearly</string>
-    <string name="purchase_list_text">List of purchases go here.</string>
+    <string name="purchase_list"></string>
     <string name="allowances_button">Allowances</string>
-    <string name="CategoryList"></string>
     <string name="yearly_allowance_left">0</string>
     <string name="monthly_allowance_left">0</string>
     <string name="daily_allowance_left">0</string>
@@ -36,4 +30,16 @@
     <string name="yearly_pay">Yearly Pay</string>
     <string name="cat_explain">Category Explanation</string>
     <string name="estimate">Estimate Finances</string>
+
+    <!-- purchase_type -->
+    <string name="groceries"></string>
+    <string name="electronics"></string>
+    <string name="entertainment"></string>
+    <string name="clothing"></string>
+    <string name="other"></string>
+    <string name="purchase_type"></string>
+
+    <!-- purchase_amount -->
+    <string name="purchase_amount_input"></string>
+    <string name="purchase_amount_button"></string>
 </resources>
